@@ -16,7 +16,6 @@
   "scopes": {
     "tenant": [
       "docx:document.block:convert",
-      "base:app:read",
       "bitable:app",
       "bitable:app:readonly",
       "board:whiteboard:node:create",
@@ -29,7 +28,6 @@
       "drive:drive",
       "drive:drive:readonly",
       "drive:file",
-      "drive:file:upload",
       "sheets:spreadsheet",
       "sheets:spreadsheet:readonly",
       "space:document:retrieve",
@@ -41,7 +39,6 @@
     ],
     "user": [
       "docx:document.block:convert",
-      "base:app:read",
       "bitable:app",
       "bitable:app:readonly",
       "board:whiteboard:node:create",
@@ -54,7 +51,6 @@
       "drive:drive",
       "drive:drive:readonly",
       "drive:file",
-      "drive:file:upload",
       "sheets:spreadsheet",
       "sheets:spreadsheet:readonly",
       "space:document:retrieve",
