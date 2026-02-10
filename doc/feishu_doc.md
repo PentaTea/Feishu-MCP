@@ -4,7 +4,7 @@
 
 ### 请求
 ```bash
-curl -i -X POST 'https://open.feishu.cn/open-apis/auth/v3/app_access_token/internal' \
+curl -i -X POST 'https://open.larksuite.com/open-apis/auth/v3/app_access_token/internal' \
 -H 'Content-Type: application/json' \
 -d '{
     "app_id": "<your_app_id>",
@@ -27,7 +27,7 @@ curl -i -X POST 'https://open.feishu.cn/open-apis/auth/v3/app_access_token/inter
 
 ### 请求
 ```bash
-curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents' \
+curl -i -X POST 'https://open.larksuite.com/open-apis/docx/v1/documents' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <access_token>' \
 -d '{
@@ -55,7 +55,7 @@ curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents' \
 
 ### 请求
 ```bash
-curl -i -X GET 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>' \
+curl -i -X GET 'https://open.larksuite.com/open-apis/docx/v1/documents/<document_id>' \
 -H 'Authorization: Bearer <access_token>'
 ```
 
@@ -87,7 +87,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>
 
 ### 请求
 ```bash
-curl -i -X GET 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>/raw_content?lang=0' \
+curl -i -X GET 'https://open.larksuite.com/open-apis/docx/v1/documents/<document_id>/raw_content?lang=0' \
 -H 'Authorization: Bearer <access_token>'
 ```
 
@@ -106,7 +106,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>
 
 ### 请求
 ```bash
-curl -i -X GET 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>/blocks?document_revision_id=-1&page_size=500' \
+curl -i -X GET 'https://open.larksuite.com/open-apis/docx/v1/documents/<document_id>/blocks?document_revision_id=-1&page_size=500' \
 -H 'Authorization: Bearer <access_token>'
 ```
 
@@ -152,7 +152,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>
 
 ### 请求
 ```bash
-curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children?document_revision_id=-1' \
+curl -i -X POST 'https://open.larksuite.com/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children?document_revision_id=-1' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <access_token>' \
 -d '{
@@ -190,7 +190,7 @@ curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id
 
 ### 请求
 ```bash
-curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children?document_revision_id=-1' \
+curl -i -X POST 'https://open.larksuite.com/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children?document_revision_id=-1' \
 -H 'Content-Type: application/json' \
 -d '{
     "children": [
@@ -228,7 +228,7 @@ curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id
 ## 7. 更新块文本内容
 * 请求
 ```
-curl -i -X PATCH 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>?document_revision_id=-1' \
+curl -i -X PATCH 'https://open.larksuite.com/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>?document_revision_id=-1' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <access_token>' \
 -d '{
@@ -312,7 +312,7 @@ curl -i -X PATCH 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_i
 ## 8.获取块内容
 * 请求
 ```
-curl -i -X GET 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>?document_revision_id=-1' \
+curl -i -X GET 'https://open.larksuite.com/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>?document_revision_id=-1' \
 -H 'Authorization: Bearer <access_token>'
 ```
 * 返回结果
@@ -367,7 +367,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>
 ## 9. 创建无序列表块
 * 请求参数：
 ```
-curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children?document_revision_id=-1' \
+curl -i -X POST 'https://open.larksuite.com/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children?document_revision_id=-1' \
 -H 'Authorization: Bearer <access_token>' \
 -H 'Content-Type: application/json' \
 -d '{
@@ -441,7 +441,7 @@ curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id
 ## 10.创建有无列表块
 * 请求参数
 ```
-curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children?document_revision_id=-1' \
+curl -i -X POST 'https://open.larksuite.com/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children?document_revision_id=-1' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <access_token>' \
 -d '{
@@ -515,7 +515,7 @@ curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id
 ## 11.把wiki文档id转成documentId(只有转成documentId才能进行后续操作)
 * 请求接口：
 ```
-curl -i -X GET 'https://open.feishu.cn/open-apis/wiki/v2/spaces/get_node?obj_type=wiki&token=<wiki_token>' \
+curl -i -X GET 'https://open.larksuite.com/open-apis/wiki/v2/spaces/get_node?obj_type=wiki&token=<wiki_token>' \
 -H 'Authorization: Bearer <access_token>'
 ```
 * 返回数据
@@ -549,7 +549,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/wiki/v2/spaces/get_node?obj_typ
 ## 12. 删除块
 * 请求接口：
 ```
-curl -i -X DELETE 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children/batch_delete?document_revision_id=-1' \
+curl -i -X DELETE 'https://open.larksuite.com/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children/batch_delete?document_revision_id=-1' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <access_token>' \
 -d '{
@@ -572,7 +572,7 @@ curl -i -X DELETE 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_
 ### 13. 获取图片资源
 * 请求接口：
 ```
-curl -i -X GET 'https://open.feishu.cn/open-apis/drive/v1/medias/<media_id>/download?extra=%E6%97%A0' \
+curl -i -X GET 'https://open.larksuite.com/open-apis/drive/v1/medias/<media_id>/download?extra=%E6%97%A0' \
 -H 'Authorization: Bearer <access_token>'
 ```
 * 返回数据
@@ -581,7 +581,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/drive/v1/medias/<media_id>/down
 ### 14.获取根文件夹信息
 * 请求接口：
 ```
-curl --location 'https://open.feishu.cn/open-apis/drive/explorer/v2/root_folder/meta' \
+curl --location 'https://open.larksuite.com/open-apis/drive/explorer/v2/root_folder/meta' \
 --header 'Authorization: Bearer <access_token>'
 ```
 * 返回数据：
@@ -600,7 +600,7 @@ curl --location 'https://open.feishu.cn/open-apis/drive/explorer/v2/root_folder/
 ### 15. 获取文件夹中的文件清单
 * 请求接口：
 ```
-curl -i -X GET 'https://open.feishu.cn/open-apis/drive/v1/files?direction=DESC&folder_token=<folder_token>&order_by=EditedTime' \
+curl -i -X GET 'https://open.larksuite.com/open-apis/drive/v1/files?direction=DESC&folder_token=<folder_token>&order_by=EditedTime' \
 -H 'Authorization: Bearer <access_token>'
 ```
 * 返回数据：
@@ -617,7 +617,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/drive/v1/files?direction=DESC&f
         "parent_token": "<folder_token>",
         "token": "<folder_token>",
         "type": "folder",
-        "url": "https://<domain>.feishu.cn/drive/folder/<folder_token>"
+        "url": "https://<domain>.larksuite.com/drive/folder/<folder_token>"
       },
       {
         "created_time": "1744904770",
@@ -627,7 +627,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/drive/v1/files?direction=DESC&f
         "parent_token": "<folder_token>",
         "token": "<folder_token>",
         "type": "folder",
-        "url": "https://<domain>.feishu.cn/drive/folder/<folder_token>"
+        "url": "https://<domain>.larksuite.com/drive/folder/<folder_token>"
       },
       {
         "created_time": "1744904794",
@@ -637,7 +637,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/drive/v1/files?direction=DESC&f
         "parent_token": "<folder_token>",
         "token": "<folder_token>",
         "type": "folder",
-        "url": "https://<domain>.feishu.cn/drive/folder/<folder_token>"
+        "url": "https://<domain>.larksuite.com/drive/folder/<folder_token>"
       },
       {
         "created_time": "1744973513",
@@ -647,7 +647,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/drive/v1/files?direction=DESC&f
         "parent_token": "<folder_token>",
         "token": "<document_token>",
         "type": "docx",
-        "url": "https://<domain>.feishu.cn/docx/<document_token>"
+        "url": "https://<domain>.larksuite.com/docx/<document_token>"
       }
     ],
     "has_more": false
@@ -659,7 +659,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/drive/v1/files?direction=DESC&f
 ### 16.新建文件夹
 * 请求接口：
 ```
-curl -i -X POST 'https://open.feishu.cn/open-apis/drive/v1/files/create_folder' \
+curl -i -X POST 'https://open.larksuite.com/open-apis/drive/v1/files/create_folder' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <access_token>' \
 -d '{
@@ -673,7 +673,7 @@ curl -i -X POST 'https://open.feishu.cn/open-apis/drive/v1/files/create_folder' 
   "code": 0,
   "data": {
     "token": "<folder_token>",
-    "url": "https://<domain>.feishu.cn/drive/folder/<folder_token>"
+    "url": "https://<domain>.larksuite.com/drive/folder/<folder_token>"
   },
   "msg": "success"
 }
@@ -682,7 +682,7 @@ curl -i -X POST 'https://open.feishu.cn/open-apis/drive/v1/files/create_folder' 
 ### 17.插入图片
 #### 1. 创建图片 Block
 * 请求接口：
-url:https://open.feishu.cn/open-apis/docx/v1/documents/:document_id/blocks/:block_id/children
+url:https://open.larksuite.com/open-apis/docx/v1/documents/:document_id/blocks/:block_id/children
 ```
 curl --location --request POST '{url}' \
 --header 'Authorization: {Authorization}' \
@@ -722,7 +722,7 @@ curl --location --request POST '{url}' \
 }
 ```
 #### 2. 上传图片素材
-url:https://open.feishu.cn/open-apis/drive/v1/medias/upload_all
+url:https://open.larksuite.com/open-apis/drive/v1/medias/upload_all
 * 请求数据
 ```
 curl --location --request POST '{url}' \
@@ -745,7 +745,7 @@ curl --location --request POST '{url}' \
 }
 ```
 ##### 3. 设置图片 Block 的素材
-url:https://open.feishu.cn/open-apis/docx/v1/documents/:document_id/blocks/:block_id
+url:https://open.larksuite.com/open-apis/docx/v1/documents/:document_id/blocks/:block_id
 ```
 url --location --request PATCH '{url}' \
 --header 'Authorization: {Authorization}' \
@@ -758,7 +758,7 @@ url --location --request PATCH '{url}' \
 ```
 
 ### 18. 搜索文档
-url:https://open.feishu.cn/open-apis/suite/docs-api/search/object
+url:https://open.larksuite.com/open-apis/suite/docs-api/search/object
 * 请求数据
 ```
 {
@@ -787,7 +787,7 @@ url:https://open.feishu.cn/open-apis/suite/docs-api/search/object
 ```
 ### 19. 获取画板内容
 * 请求：
-  curl -i -X GET 'https://open.feishu.cn/open-apis/board/v1/whiteboards/<whiteboard_id>/nodes' \
+  curl -i -X GET 'https://open.larksuite.com/open-apis/board/v1/whiteboards/<whiteboard_id>/nodes' \
   -H 'Authorization: Bearer <access_token>'
 * 返回数据：
 ```
@@ -921,7 +921,7 @@ url:https://open.feishu.cn/open-apis/suite/docs-api/search/object
 }
 ```
 ## 20. 获取画板缩略图
-* 请求：  curl -i -X GET 'https://open.feishu.cn/open-apis/board/v1/whiteboards/<whiteboard_id>/download_as_image' \
+* 请求：  curl -i -X GET 'https://open.larksuite.com/open-apis/board/v1/whiteboards/<whiteboard_id>/download_as_image' \
   -H 'Authorization: Bearer <access_token>'
 * 二进制图片
 
@@ -929,7 +929,7 @@ url:https://open.feishu.cn/open-apis/suite/docs-api/search/object
 ## 21. 创建Mermaid
 * 请求参数
 ```
-curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children?document_revision_id=-1' \
+curl -i -X POST 'https://open.larksuite.com/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children?document_revision_id=-1' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <access_token>' \
 -d '{
@@ -1019,7 +1019,7 @@ curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id
 ### 22.1 创建画板块（空块）
 * 请求接口：
 ```
-curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children?document_revision_id=-1' \
+curl -i -X POST 'https://open.larksuite.com/open-apis/docx/v1/documents/<document_id>/blocks/<block_id>/children?document_revision_id=-1' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <access_token>' \
 -d '{
@@ -1066,7 +1066,7 @@ curl -i -X POST 'https://open.feishu.cn/open-apis/docx/v1/documents/<document_id
 ### 22.2 填充画板内容（创建图表节点，支持 PlantUML 和 Mermaid）
 * 请求接口：
 ```
-curl -i -X POST 'https://open.feishu.cn/open-apis/board/v1/whiteboards/<whiteboard_id>/nodes/plantuml' \
+curl -i -X POST 'https://open.larksuite.com/open-apis/board/v1/whiteboards/<whiteboard_id>/nodes/plantuml' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <access_token>' \
 -d '{
@@ -1123,7 +1123,7 @@ curl -i -X POST 'https://open.feishu.cn/open-apis/board/v1/whiteboards/<whiteboa
 ## 23.获取知识空间列表
 * 请求：
 ```
-curl -i -X GET 'https://open.feishu.cn/open-apis/wiki/v2/spaces?page_size=20' \
+curl -i -X GET 'https://open.larksuite.com/open-apis/wiki/v2/spaces?page_size=20' \
 -H 'Authorization: Bearer <access_token>'
 ```
 * 返回数据
@@ -1167,7 +1167,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/wiki/v2/spaces?page_size=20' \
 ## 24.获取“我的知识库”
 * 请求
 ```
-curl -i -X GET 'https://open.feishu.cn/open-apis/wiki/v2/spaces/my_library?lang=en' \
+curl -i -X GET 'https://open.larksuite.com/open-apis/wiki/v2/spaces/my_library?lang=en' \
 -H 'Authorization: Bearer <access_token>'
 ```
 * 返回
@@ -1190,7 +1190,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/wiki/v2/spaces/my_library?lang=
 ## 25. 获取知识空间子节点列表
 * 请求
 ```
-curl -i -X GET 'https://open.feishu.cn/open-apis/wiki/v2/spaces/<space_id>/nodes?parent_node_token=<parent_node_token>' \
+curl -i -X GET 'https://open.larksuite.com/open-apis/wiki/v2/spaces/<space_id>/nodes?parent_node_token=<parent_node_token>' \
 -H 'Authorization: Bearer <access_token>'
 ```
 * 结果
@@ -1278,7 +1278,7 @@ curl -i -X GET 'https://open.feishu.cn/open-apis/wiki/v2/spaces/<space_id>/nodes
 ## 26.创建知识空间节点
 * 请求
 ```
-curl -i -X POST 'https://open.feishu.cn/open-apis/wiki/v2/spaces/<space_id>/nodes' \
+curl -i -X POST 'https://open.larksuite.com/open-apis/wiki/v2/spaces/<space_id>/nodes' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <access_token>' \
 -d '{
@@ -1321,7 +1321,7 @@ obj_type 默认为docx，无需传入
 ## 27.搜索知识库
 * 请求
 ```
-curl -i -X POST 'https://open.feishu.cn/open-apis/wiki/v1/nodes/search?page_size=20' \
+curl -i -X POST 'https://open.larksuite.com/open-apis/wiki/v1/nodes/search?page_size=20' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <access_token>' \
 -d '{
@@ -1343,7 +1343,7 @@ curl -i -X POST 'https://open.feishu.cn/open-apis/wiki/v1/nodes/search?page_size
         "sort_id": 1,
         "space_id": "<space_id>",
         "title": "Android四大组件",
-        "url": "https://<domain>.feishu.cn/wiki/<node_id>"
+        "url": "https://<domain>.larksuite.com/wiki/<node_id>"
       },
       {
         "node_id": "<node_id>",
@@ -1353,7 +1353,7 @@ curl -i -X POST 'https://open.feishu.cn/open-apis/wiki/v1/nodes/search?page_size
         "sort_id": 2,
         "space_id": "<space_id>",
         "title": "ContentProvider",
-        "url": "https://<domain>.feishu.cn/wiki/<node_id>"
+        "url": "https://<domain>.larksuite.com/wiki/<node_id>"
       }
     ],
     "page_token": "<page_token>"

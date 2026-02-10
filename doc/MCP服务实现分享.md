@@ -123,7 +123,7 @@ export class FeishuApiService extends BaseApiService {
 export class FeishuService {
   private readonly appId: string;
   private readonly appSecret: string;
-  private readonly baseUrl = "https://open.feishu.cn/open-apis";
+  private readonly baseUrl = "https://open.larksuite.com/open-apis";
   private accessToken: string | null = null;
   private tokenExpireTime: number | null = null;
 
@@ -407,7 +407,7 @@ public getToken(): string | null {
 以下是一个开发者使用Cursor编码工具与飞书MCP服务器进行需求分析的实际对话示例：
 
 ```
-用户: 请帮我阅读这个飞书文档，并生成代码实现其中描述的功能：https://xxx.feishu.cn/docx/xxxx
+用户: 请帮我阅读这个飞书文档，并生成代码实现其中描述的功能：https://xxx.larksuite.com/docx/xxxx
 
 Cursor: 我会帮你查看这个飞书文档并生成代码。让我先查看文档内容。
 
@@ -465,7 +465,7 @@ class UserController {
 团队在飞书文档中协作编辑API规范，然后使用Cursor通过MCP服务器访问这些规范并生成代码：
 
 ```
-用户: 请根据我们团队的飞书API规范文档，为新的订单管理模块生成API接口代码：https://xxx.feishu.cn/docx/yyyy
+用户: 请根据我们团队的飞书API规范文档，为新的订单管理模块生成API接口代码：https://xxx.larksuite.com/docx/yyyy
 
 Cursor: 我会根据您团队的API规范文档生成订单管理模块的接口代码。让我先获取文档内容。
 

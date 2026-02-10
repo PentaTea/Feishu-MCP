@@ -95,7 +95,7 @@
 
 **⚠️ 重要提示：在开始使用之前，必须先完成飞书应用配置，否则无法正常使用本工具。**
 
-关于如何创建飞书应用和获取应用凭证的说明可以在[官方教程](https://open.feishu.cn/document/home/develop-a-bot-in-5-minutes/create-an-app)找到。
+关于如何创建飞书应用和获取应用凭证的说明可以在[官方教程](https://open.larksuite.com/document/home/develop-a-bot-in-5-minutes/create-an-app)找到。
 
 **详细的飞书应用配置步骤**：有关注册飞书应用、配置权限、添加文档访问权限的详细指南，请参阅 [手把手教程 FEISHU_CONFIG.md](FEISHU_CONFIG.md)。
 
@@ -218,15 +218,15 @@ npx feishu-mcp@latest --feishu-app-id=<你的飞书应用ID> --feishu-app-secret
 3. **检查可用范围**：确保应用发布版本的可用范围包含文档所有者
 
 #### 权限验证与排查
-1. 获取token：[自建应用获取 app_access_token](https://open.feishu.cn/api-explorer?apiName=app_access_token_internal&project=auth&resource=auth&version=v3)
-2. 使用第1步获取的token，验证是否有权限访问该文档：[获取文档基本信息](https://open.feishu.cn/api-explorer?apiName=get&project=docx&resource=document&version=v1)
+1. 获取token：[自建应用获取 app_access_token](https://open.larksuite.com/api-explorer?apiName=app_access_token_internal&project=auth&resource=auth&version=v3)
+2. 使用第1步获取的token，验证是否有权限访问该文档：[获取文档基本信息](https://open.larksuite.com/api-explorer?apiName=get&project=docx&resource=document&version=v1)
 
 
 ### 常见问题
 
 - **找不到应用**：检查应用是否已发布且可用范围配置正确
-- **权限不足**：参考[云文档常见问题](https://open.feishu.cn/document/ukTMukTMukTM/uczNzUjL3czM14yN3MTN)
-- **知识库访问问题**：参考[知识库常见问题](https://open.feishu.cn/document/server-docs/docs/wiki-v2/wiki-qa)
+- **权限不足**：参考[云文档常见问题](https://open.larksuite.com/document/ukTMukTMukTM/uczNzUjL3czM14yN3MTN)
+- **知识库访问问题**：参考[知识库常见问题](https://open.larksuite.com/document/server-docs/docs/wiki-v2/wiki-qa)
 
 ---
 

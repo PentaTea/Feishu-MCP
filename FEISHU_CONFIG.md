@@ -1,7 +1,7 @@
 
 ## 详细步骤
 ### 一、注册飞书应用
-* url:https://open.feishu.cn/app?lang=zh-CN
+* url:https://open.larksuite.com/app?lang=zh-CN
 
   ![注册飞书应用](image/register_application.png)
 ### 二、为应用添加权限
@@ -74,13 +74,13 @@
 要添加应用为文档协作者，主要有以下两种方式：
 #### 方式一：直接添加应用为云文档的协作者(作用于单个文档)
 该方式要求操作者为云文档所有者、拥有文档管理权限的协作者或知识库管理员。操作者可通过云文档网页页面右上方「...」->「...更多」-> 「添加文档应用」入口添加。
-> 1. 在 添加文档应用 前，你需确保发布版本的[可用范围](https://open.feishu.cn/document/develop-process/test-and-release-app/availability)包含节点云文档的所有者。否则你将无法在文档应用窗口搜索到目标应用。
-> 2. 在 添加文档应用 前，你需确保目标应用至少开通了任意一个云文档 [API 权限](https://open.feishu.cn/document/server-docs/application-scope/scope-list)。否则你将无法在文档应用窗口搜索到目标应用。
+> 1. 在 添加文档应用 前，你需确保发布版本的[可用范围](https://open.larksuite.com/document/develop-process/test-and-release-app/availability)包含节点云文档的所有者。否则你将无法在文档应用窗口搜索到目标应用。
+> 2. 在 添加文档应用 前，你需确保目标应用至少开通了任意一个云文档 [API 权限](https://open.larksuite.com/document/server-docs/application-scope/scope-list)。否则你将无法在文档应用窗口搜索到目标应用。
 
 ![直接添加应用为云文档的协作者](image/add_file_permission_1.png)
 
 #### 方式二：添加包含应用的群组为云文档资源的协作者
-#### 1. 访问[开发者后台](https://open.feishu.cn/app)，选择目标应用
+#### 1. 访问[开发者后台](https://open.larksuite.com/app)，选择目标应用
 
 #### 2. 在应用管理页面，点击添加应用能力，找到机器人卡片，点击 +添加。
 ![添加机器人](image/add_robot.png)
@@ -127,5 +127,5 @@
 ```
 
 ### 六、注
-1. 具体可参见[官方云文档常见问题](https://open.feishu.cn/document/server-docs/docs/faq)
-1. 具体可参见[知识库常见问题](https://open.feishu.cn/document/server-docs/docs/wiki-v2/wiki-qa)
+1. 具体可参见[官方云文档常见问题](https://open.larksuite.com/document/server-docs/docs/faq)
+1. 具体可参见[知识库常见问题](https://open.larksuite.com/document/server-docs/docs/wiki-v2/wiki-qa)
