@@ -8,13 +8,13 @@ export const DocumentTypeSchema = z.enum(['document', 'wiki']).optional().descri
 // 文档ID或URL参数定义（仅支持普通文档）
 export const DocumentIdSchema = z.string().describe(
   'Document ID or URL (required). Supports the following formats:\n' +
-  '1. Standard document URL: https://xxx.feishu.cn/docs/xxx or https://xxx.feishu.cn/docx/xxx\n' +
+  '1. Standard document URL: https://xxx.larksuite.com/docs/xxx or https://xxx.larksuite.com/docx/xxx (or feishu.cn)\n' +
   '2. Direct document ID: e.g., JcKbdlokYoPIe0xDzJ1cduRXnRf'
 );
 
 // 文档ID或Wiki ID参数定义（用于 get_feishu_document_info，支持普通文档和Wiki文档）
 export const DocumentIdOrWikiIdSchema = z.string().describe(
-  'Document ID, URL, or Wiki ID/URL (required). Supports regular document formats (https://xxx.feishu.cn/docx/xxx or direct ID) and Wiki formats (https://xxx.feishu.cn/wiki/xxxxx or Wiki token).'
+  'Document ID, URL, or Wiki ID/URL (required). Supports regular document formats (https://xxx.larksuite.com/docx/xxx or direct ID) and Wiki formats (https://xxx.larksuite.com/wiki/xxxxx or Wiki token). Also supports feishu.cn domains.'
 );
 
 // 父块ID参数定义

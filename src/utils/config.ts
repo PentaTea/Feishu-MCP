@@ -191,7 +191,7 @@ export class Config {
     const feishuConfig: FeishuConfig = {
       appId: '',
       appSecret: '',
-      baseUrl: 'https://open.feishu.cn/open-apis',
+      baseUrl: 'https://open.larksuite.com/open-apis',
       authType: 'tenant', // 默认
       tokenEndpoint: `http://127.0.0.1:${serverConfig.port}/getToken`, // 默认动态端口
       enableScopeValidation: true, // 默认启用权限检查

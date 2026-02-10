@@ -204,7 +204,7 @@ export class ParamUtils {
     try {
       // 从URL中提取画板ID
       let normalizedWhiteboardId = whiteboardId;
-      if (whiteboardId.includes('feishu.cn/board/')) {
+      if (whiteboardId.includes('larksuite.com/board/') || whiteboardId.includes('feishu.cn/board/')) {
         // 从URL中提取画板ID
         const matches = whiteboardId.match(/board\/([^\/\?]+)/);
         if (matches) {

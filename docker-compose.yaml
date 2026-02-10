@@ -6,7 +6,7 @@ services:
     environment:
       - FEISHU_APP_ID=${FEISHU_APP_ID}
       - FEISHU_APP_SECRET=${FEISHU_APP_SECRET}
-      - FEISHU_BASE_URL=${FEISHU_BASE_URL:-https://open.feishu.cn/open-apis}
+      - FEISHU_BASE_URL=${FEISHU_BASE_URL:-https://open.larksuite.com/open-apis}
       - FEISHU_AUTH_TYPE=${FEISHU_AUTH_TYPE:-tenant}
       - PORT=${PORT:-3333}
       - LOG_LEVEL=${LOG_LEVEL:-info}

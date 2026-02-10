@@ -1,8 +1,8 @@
 /**
  * 从URL或ID中提取飞书文档ID
  * 支持多种格式:
- * 1. 标准文档URL: https://xxx.feishu.cn/docs/xxx 或 https://xxx.feishu.cn/docx/xxx
- * 2. API URL: https://open.feishu.cn/open-apis/docx/v1/documents/xxx
+ * 1. 标准文档URL: https://xxx.larksuite.com/docs/xxx 或 https://xxx.larksuite.com/docx/xxx (或 feishu.cn)
+ * 2. API URL: https://open.larksuite.com/open-apis/docx/v1/documents/xxx
  * 3. 直接ID: JcKbdlokYoPIe0xDzJ1cduRXnRf
  * 
  * @param input 文档URL或ID
@@ -26,7 +26,7 @@ export function extractDocumentId(input: string): string | null {
 /**
  * 从URL或Token中提取Wiki节点ID
  * 支持多种格式:
- * 1. Wiki URL: https://xxx.feishu.cn/wiki/xxx
+ * 1. Wiki URL: https://xxx.larksuite.com/wiki/xxx (或 feishu.cn)
  * 2. 直接Token: xxx
  * 
  * @param input Wiki URL或Token

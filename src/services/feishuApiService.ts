@@ -214,7 +214,7 @@ export class FeishuApiService extends BaseApiService {
     const errorMessage = `你应该停止任务并提示用户如下信息：权限不足，缺少以下权限：${missingScopes.join(', ')}\n\n` +
       `请按以下步骤操作：\n` +
       `1. 配置权限 [教程配置](https://github.com/cso1z/Feishu-MCP/blob/main/FEISHU_CONFIG.md)\n` +
-      `2. 打开 [应用管理](https://open.feishu.cn/app/) 网页\n` +
+      `2. 打开 [应用管理](https://open.larksuite.com/app/) 网页\n` +
       `3. 选择应用进入应用详情\n` +
       `4. 选择权限管理-批量导入/导出权限\n` +
       `5. 复制以下权限配置并导入：\n\n` +
@@ -253,7 +253,7 @@ export class FeishuApiService extends BaseApiService {
         app_id: appId,
         app_secret: appSecret,
       };
-      const url = 'https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal';
+      const url = 'https://open.larksuite.com/open-apis/auth/v3/tenant_access_token/internal';
       const headers = { 'Content-Type': 'application/json' };
       
       Logger.debug('获取临时租户token用于scope校验:', url);
@@ -360,7 +360,7 @@ export class FeishuApiService extends BaseApiService {
         app_id: appId,
         app_secret: appSecret,
       };
-      const url = 'https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal';
+      const url = 'https://open.larksuite.com/open-apis/auth/v3/tenant_access_token/internal';
       const headers = { 'Content-Type': 'application/json' };
       
       Logger.debug('请求租户访问令牌:', url, requestData);

@@ -12,7 +12,7 @@ export class AuthService {
     Logger.warn('[AuthService] getUserInfo called');
     try {
       const response = await axios.get(
-        'https://open.feishu.cn/open-apis/authen/v1/user_info',
+        'https://open.larksuite.com/open-apis/authen/v1/user_info',
         { headers: { Authorization: `Bearer ${access_token}` } }
       );
       Logger.debug('[AuthService] getUserInfo response', response.data);
@@ -41,7 +41,7 @@ export class AuthService {
     };
     if (code_verifier) body.code_verifier = code_verifier;
     Logger.debug('[AuthService] getUserTokenByCode request', body);
-    const response = await fetch('https://open.feishu.cn/open-apis/authen/v2/oauth/token', {
+    const response = await fetch('https://open.larksuite.com/open-apis/authen/v2/oauth/token', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body)
@@ -95,7 +95,7 @@ export class AuthService {
       has_refresh_token: !!actualRefreshToken
     });
     
-    const response = await axios.post('https://open.feishu.cn/open-apis/authen/v2/oauth/token', body, { 
+    const response = await axios.post('https://open.larksuite.com/open-apis/authen/v2/oauth/token', body, { 
       headers: { 'Content-Type': 'application/json' } 
     });
     const data = response.data;
