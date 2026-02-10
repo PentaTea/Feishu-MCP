@@ -162,7 +162,6 @@ export class FeishuApiService extends BaseApiService {
     // 根据FEISHU_CONFIG.md中定义的权限列表，与用户提供的配置保持一致
     const tenantScopes = [
       "docx:document.block:convert",
-      "base:app:read",
       "bitable:app",
       "bitable:app:readonly",
       "board:whiteboard:node:create",
@@ -175,7 +174,6 @@ export class FeishuApiService extends BaseApiService {
       "drive:drive",
       "drive:drive:readonly",
       "drive:file",
-      "drive:file:upload",
       "sheets:spreadsheet",
       "sheets:spreadsheet:readonly",
       "space:document:retrieve",
